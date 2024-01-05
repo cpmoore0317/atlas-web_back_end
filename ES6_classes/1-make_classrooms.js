@@ -1,6 +1,6 @@
 // cpmoore0317
 
-import ClassRoom from './0-ClassRoom.js';
+import ClassRoom from './0-classroom.js';
 
 export default function initializeRooms() {
   const maxSize = [19, 20, 34];
