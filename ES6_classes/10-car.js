@@ -12,7 +12,7 @@ export default class Car {
   }
 
   get brand() {
-    return this[this.brandSymbol];
+    return this[brandSymbol];
   }
 
   get motor() {
