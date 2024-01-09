@@ -15,5 +15,4 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
     location: student.city,
     grade: updatedGrade,
   };
-  return updatedStudentGrades;
 }
