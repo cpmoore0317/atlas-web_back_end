@@ -7,7 +7,7 @@ export default function handleProfileSignup() {
     .then((results) => {
       const [photoResult, userResult] = results;
       console.log(
-        `${photoResult.body} ${userresult.firstName} ${userResult.lastName}`
+        `${photoResult.body} ${userResult.firstName} ${userResult.lastName}`
       );
     })
     .catch((error) => {
