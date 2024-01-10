@@ -1,6 +1,6 @@
 // cpmoore0317
 
-import { uploadPhoto, createUser } from './utils';
+import { uploadPhoto, createUser } from "./utils";
 
 export default function handleProfileSignup() {
   return Promise.all([
@@ -13,5 +13,6 @@ export default function handleProfileSignup() {
   ])
   .then((results) => {
     const [photoResult, userResult] = results;
+    console.log(`${photoResult.body} ${userResult.firstName} ${userResult.lastName}`);
   });
 }
