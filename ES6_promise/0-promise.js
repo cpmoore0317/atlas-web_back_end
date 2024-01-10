@@ -8,7 +8,7 @@ export default function getResponseFromAPI() {
       if (success) {
         resolve('Api response data');
       } else {
-        reject('Error fetching data from API');
+        reject(new Error('Error fetching data from API'));
       }
     }, 1000);
   });
