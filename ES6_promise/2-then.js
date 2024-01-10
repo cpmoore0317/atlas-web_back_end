@@ -1,4 +1,5 @@
 // cpmoore0317
+/* eslint-disable no-unused-vars */
 
 export default function handleResponseFromAPI(promise) {
   return promise
