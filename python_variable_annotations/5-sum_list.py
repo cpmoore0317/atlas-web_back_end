@@ -2,7 +2,6 @@
 """
 Module for a function that takes a list of floats and returns their sum.
 """
-from typing import List
 
 
 def sum_list(input_list: list) -> float:
