@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Type-annotated function that adds two floats and returns their sum as a float.
+add - Type-annotated function that adds two floats and returns their sum as a float.
 
 Parameters:
 a (float): The first number.
