@@ -2,13 +2,13 @@
 """
 Module for taking a mixed set of types and returning a tuple.
 """
-from typing import Union
+from typing import Union, Tuple
 
 
-def to_kv(k: str, v: Union[int, float]) -> tuple:
+def to_kv(k: str, v: Union[int, float]) -> Tuple:
     """
     Type-annotated function that takes a string an an int or float and
     returns a tuple. The first element of the tuple is a string and
     the second is the square of the int/float annotated as a float.
     """
-    return tuple((k, float(v ** 2)))
+    return Tuple((k, float(v ** 2)))
