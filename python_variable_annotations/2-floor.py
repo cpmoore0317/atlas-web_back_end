@@ -4,7 +4,7 @@ Module for retrieving the the floor of a float.
 """
 
 
-def floor(n: float):
+def floor(n: float) -> int:
     """
     Type-annotated function which takes a float
     and returns the floor of the float.
