@@ -3,6 +3,7 @@
 Module for concatenating two strings.
 """
 
+
 def concat(str1: str, str2: str) -> str:
     """
     Type-annoted function that takes two strings
