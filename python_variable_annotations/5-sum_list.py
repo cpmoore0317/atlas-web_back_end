@@ -4,7 +4,7 @@ Module for a function that takes a list of floats and returns their sum.
 """
 
 
-def sum_list(input_list: list) -> float:
+def sum_list(input_list: float) -> float:
     """
     Type-annotated function which takes a list of floats
     and returns their sum as a float.
