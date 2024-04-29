@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env python3
 """
 Module for a function that takes a list of floats and returns their sum.
 """
