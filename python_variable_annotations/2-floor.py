@@ -9,4 +9,4 @@ def floor(n: float) -> int:
     Type-annotated function which takes a float
     and returns the floor of the float.
     """
-    return n
+    return n(int)
