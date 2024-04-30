@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-Module for adding two numbers.
-"""
+"""0-add.py"""
 
 
 def add(a: float, b: float) -> float:

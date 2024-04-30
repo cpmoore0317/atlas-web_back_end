@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-Module for returning a function that multiplies a float.
-"""
+"""8-make_multiplier.py"""
 from typing import Callable
 
 

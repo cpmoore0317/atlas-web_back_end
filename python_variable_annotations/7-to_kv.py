@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-Module for taking a mixed set of types and returning a tuple.
-"""
+"""7-to_kv.py"""
 from typing import Union, Tuple
 
 

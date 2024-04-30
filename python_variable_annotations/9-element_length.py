@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-Module for annotating the function with correct types.
-"""
+"""9-element_length.py"""
 from typing import Iterable, Sequence, List, Tuple
 
 

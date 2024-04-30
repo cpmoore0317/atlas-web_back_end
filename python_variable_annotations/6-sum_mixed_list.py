@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-Module for returning the sum of a list with mied types.
-"""
+"""6-sum_mixed_list.py"""
 from typing import List, Union
 
 

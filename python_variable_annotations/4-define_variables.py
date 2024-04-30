@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-Module for defining and annotating variables.
-"""
+"""4-define_variables.py"""
 
 
 a: int = 1

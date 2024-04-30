@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-Module for retrieving the the floor of a float.
-"""
+"""2-floor.py"""
 
 
 def floor(n: float) -> int:
