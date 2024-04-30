@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""
-Module for an asynchronous coroutine that waits for a random delay,
-then returns the random delay.
-"""
+"""0-basic_async_syntax.py"""
 import asyncio
 import random
 

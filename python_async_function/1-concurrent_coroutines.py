@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""
-Module that imports wait_random to create an async routine that takes 2 int
-arguments. wait_random spawns n times with the specified max_delay.
-"""
+"""1-concurrent_coroutines.py"""
 import asyncio
 from typing import List
 wait_random = __import__('0-basic_async_syntax').wait_random
