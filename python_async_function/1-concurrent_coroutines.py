@@ -3,7 +3,7 @@
 Module that imports wait_random to create an async routine that takes 2 int arguments.
 wait_random spawns n times with the specified max_delay.
 """
-from ./0-basic_async_syntax.py import wait_random
+__import__('0-basic_async_syntax').wait_random
 import asyncio
 from typing import List
 
