@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Module that imports wait_random to create an async routine that takes 2 int 
+Module that imports wait_random to create an async routine that takes 2 int
 arguments. wait_random spawns n times with the specified max_delay.
 """
 import asyncio
