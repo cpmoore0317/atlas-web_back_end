@@ -4,6 +4,26 @@ from base_caching import BaseCaching
 
 
 class BasicCache(BaseCaching):
+    """
+    A basic caching system that inherits from BaseCaching.
+
+    Attributes:
+        cache_data (dict): Dictionary to store cached data.
+
+    Methods:
+        put(key, item):
+            Adds an item to the cache.
+            Args:
+                key: The key for the cache entry.
+                item: The value to be stored in the cache.
+
+        get(key):
+            Retrieves the value associated with the given key from the cache.
+            Args:
+                key: The key to look up in the cache.
+            Returns:
+                The value linked to the key, or None if the key doesn't exist.
+    """
     def put(self, key, item):
         """
         Assigns the item value to the key in the cache.
