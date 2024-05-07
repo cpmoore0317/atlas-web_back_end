@@ -33,7 +33,6 @@ class FIFOCache(BaseCaching):
         """
         super().__init__()
 
-
     def put(self, key, item):
         """
         Assigns the item value to the key in the cache using FIFO eviction.
@@ -53,7 +52,6 @@ class FIFOCache(BaseCaching):
                 first_key = next(iter(self.cache_data))
                 print(f"DISCARD: {first_key}")
                 del self.cache_data[first_key]
-
 
     def get(self, key):
         """
