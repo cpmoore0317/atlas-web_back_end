@@ -5,7 +5,8 @@ from base_caching import BaseCaching
 
 class LRUCache(BaseCaching):
     """
-    LRUCache class that inherits from BaseCaching and implements a caching system.
+    LRUCache class that inherits from BaseCaching and implements a
+    caching system.
 
     Attributes:
         cache_data (dict): Dictionary to store cached data.
