@@ -47,11 +47,9 @@ class LIFOCache(BaseCaching):
         if key is not None and item is not None:
             self.cache_data[key] = item
             if len(self.cache_data) > self.MAX_ITEMS:
-                # Convert dict_keys to a list and get the last key (LIFO)
-                last_key = self.get_last_key()
-                if last_key:
-                    print(f"DISCARD: {last_key}")
-                    del self.cache_data[last_key]
+                # Pop the last item added (LIFO)
+                last_key, _ = self.cache_data.popitem()
+                print(f"DISCARD: {last_key}")
 
     def get(self, key):
         """
@@ -64,14 +62,3 @@ class LIFOCache(BaseCaching):
             The value linked to the key, or None if the key doesn't exist.
         """
         return self.cache_data.get(key)
-
-    def get_last_key(self):
-        """
-        Gets the key of the last item added to the cache (LIFO).
-
-        Returns:
-            The key of the last item, or None if the cache is empty.
-        """
-        if self.cache_data:
-            return next(reversed(list(self.cache_data.keys())))
-        return None
