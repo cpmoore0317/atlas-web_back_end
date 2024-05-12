@@ -6,31 +6,14 @@ from base_caching import BaseCaching
 class LIFOCache(BaseCaching):
     """
     LIFOCache class that inherits from BaseCaching and implements a caching system.
-
-    Attributes:
-        cache_data (dict): Dictionary to store cached data.
-
-    Methods:
-        put(key, item):
-            Adds an item to the cache.
-            Args:
-                key: The key for the cache entry.
-                item: The value to be stored in the cache.
-
-        get(key):
-            Retrieves the value associated with the given key from the cache.
-            Args:
-                key: The key to look up in the cache.
-            Returns:
-                The value linked to the key, or None if the key doesn't exist.
     """
 
     def __init__(self):
         """
         Initializes the LIFOCache instance.
-        Calls the parent class BaseCaching's __init__ method.
         """
         super().__init__()
+        self.key_order = []  # Maintain order of keys
 
     def put(self, key, item):
         """
@@ -39,16 +22,14 @@ class LIFOCache(BaseCaching):
         Args:
             key: The key for the cache entry.
             item: The value to be stored in the cache.
-
-        Notes:
-            If key or item is None, this method does nothing.
-            If the cache is full, evicts the last item added (LIFO).
         """
         if key is not None and item is not None:
             self.cache_data[key] = item
+            self.key_order.append(key)  # Add key to order
             if len(self.cache_data) > self.MAX_ITEMS:
-                # Pop the last item added (LIFO)
-                last_key, _ = self.cache_data.popitem()
+                # Pop the last added key (LIFO)
+                last_key = self.key_order.pop(0)
+                del self.cache_data[last_key]
                 print(f"DISCARD: {last_key}")
 
     def get(self, key):
