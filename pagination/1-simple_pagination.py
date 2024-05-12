@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """1-simple_pagination.py"""
-
-
 import csv
 from typing import List
+
 
 def index_range(page: int, page_size: int) -> tuple:
     """
@@ -29,8 +28,7 @@ class Server:
         self.__dataset = None
 
     def dataset(self) -> List[List]:
-        """Cached dataset
-        """
+        """Cached dataset"""
         if self.__dataset is None:
             with open(self.DATA_FILE) as f:
                 reader = csv.reader(f)
@@ -50,8 +48,10 @@ class Server:
         Returns:
             List[List]: The data for the specified page.
         """
-        assert isinstance(page, int) and page > 0, "Page must be a positive integer"
-        assert isinstance(page_size, int) and page_size > 0, "Page size must be a positive integer"
+        assert isinstance(page, int) and page > 0
+        "Page must be a positive integer"
+        assert isinstance(page_size, int) and page_size > 0
+        "Page size must be a positive integer"
 
         start_index, end_index = index_range(page, page_size)
         dataset = self.dataset()
