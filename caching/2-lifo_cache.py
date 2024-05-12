@@ -5,7 +5,8 @@ from base_caching import BaseCaching
 
 class LIFOCache(BaseCaching):
     """
-    LIFOCache class that inherits from BaseCaching and implements a caching system.
+    LIFOCache class that inherits from BaseCaching and implements a
+    caching system.
     """
 
     def __init__(self):
