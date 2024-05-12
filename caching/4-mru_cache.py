@@ -5,7 +5,8 @@ from base_caching import BaseCaching
 
 class MRUCache(BaseCaching):
     """
-    MRUCache class that inherits from BaseCaching and implements a caching system.
+    MRUCache class that inherits from BaseCaching and implements a
+    caching system.
 
     Attributes:
         cache_data (dict): Dictionary to store cached data.
