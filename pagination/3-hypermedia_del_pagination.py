@@ -49,7 +49,11 @@ class Server:
         Returns:
             Dict: A dictionary containing hypermedia information.
         """
-        assert index is None or (isinstance(index, int) and index >= 0 and index < len(self.indexed_dataset())), \
+        assert index is None or (
+            isinstance(index, int) and index >= 0 and index < len(
+                self.indexed_dataset()
+                )
+            ), \
             "Index must be a non-negative integer within range."
 
         dataset = self.indexed_dataset()
@@ -62,7 +66,11 @@ class Server:
         if next_index >= len(dataset):
             next_index = None
 
-        data = [dataset[i] for i in range(index, min(index + page_size, len(dataset)))]
+        data = [
+            dataset[i] for i in range(index, min(
+                index + page_size, len(dataset)
+                ))
+            ]
 
         return {
             'index': index,
