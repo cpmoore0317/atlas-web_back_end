@@ -38,10 +38,12 @@ class Server:
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         """
-        Retrieves data for a page specified by index with additional hypermedia information.
+        Retrieves data for a page specified by index with additional
+        hypermedia information.
 
         Args:
-            index (int): The start index of the page (0-indexed). Default is None.
+            index (int): The start index of the page (0-indexed).
+            Default is None.
             page_size (int): The number of items per page. Default is 10.
 
         Returns:
