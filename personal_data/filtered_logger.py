@@ -56,7 +56,9 @@ class RedactingFormatter(logging.Formatter):
                                         original_message, self.SEPARATOR)
         return redacted_message
 
+
 PII_FIELDS = ("name", "email", "phone", "ssn", "password")
+
 
 def get_logger() -> logging.Logger:
     """
