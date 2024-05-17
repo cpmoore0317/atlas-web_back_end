@@ -52,7 +52,27 @@ class RedactingFormatter(logging.Formatter):
             str: The formatted log message with specified fields redacted.
         """
         original_message = super().format(record)
-        redacted_message = filter_datum(self.fields,
-                                        self.REDACTION, original_message,
-                                        self.SEPARATOR)
+        redacted_message = filter_datum(self.fields, self.REDACTION,
+                                        original_message, self.SEPARATOR)
         return redacted_message
+
+PII_FIELDS = ("name", "email", "phone", "ssn", "password")
+
+def get_logger() -> logging.Logger:
+    """
+    Returns a logger object named "user_data" with specified configurations.
+
+    Returns:
+        logging.Logger: Configured logger object.
+    """
+    logger = logging.getLogger("user_data")
+    logger.setLevel(logging.INFO)
+    logger.propagate = False
+
+    stream_handler = logging.StreamHandler()
+    formatter = RedactingFormatter(fields=PII_FIELDS)
+    stream_handler.setFormatter(formatter)
+
+    logger.addHandler(stream_handler)
+
+    return logger
