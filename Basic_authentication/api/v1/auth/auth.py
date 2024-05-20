@@ -37,7 +37,7 @@ class Auth:
             return True
 
         # Ensure the path ends with a slash
-        if non path.endswith('/'):
+        if not path.endswith('/'):
             path += '/'
 
         for excluded_path in excluded_paths"
