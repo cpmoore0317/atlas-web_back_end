@@ -1,10 +1,24 @@
 #!/usr/bin/env python3
-"""auth.py"""
+"""
+auth.py
+
+This module provides the Auth class to manage API authentication.
+"""
 from flask import request
 from typing import List, TypeVar
 
 
 class Auth:
+    """
+    Auth class to manage the API authentication.
+    
+    Methods:
+        require_auth(path: str, excluded_paths: List[str]) -> bool
+        authorization_header(request=None) -> str
+        current_user(request=None) -> TypeVar('User')
+    """
+
+
     def require_auth(self, path: str, excluded_paths: List[str]) -> bool:
         """
         Determines if authentication is required for a given path.
