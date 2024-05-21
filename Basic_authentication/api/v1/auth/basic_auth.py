@@ -45,8 +45,7 @@ class BasicAuth(Auth):
         Returns:
             str: The decoded value as UTF8 string or None if input is invalid.
         """
-        if base64_authorization_header is None or
-        not isinstance(base64_authorization_header, str):
+        if base64_authorization_header is None or not isinstance(base64_authorization_header, str):
             return None
 
         try:
