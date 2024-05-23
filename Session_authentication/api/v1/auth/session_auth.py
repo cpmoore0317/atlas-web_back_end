@@ -62,13 +62,14 @@ class SessionAuth(Auth):
             TypeVar('User'): None for now.
         """
         return None
-    
+
     def session_cookie(self, request=None):
         """
         Returns a cookie value from a request.
 
         Args:
-            request (flask.request): The request object to retreive the cookie form.
+            request (flask.request): The request object to retreive the
+            cookie form.
 
         Returns:
             str: The cookie value if found, otherwise None.
