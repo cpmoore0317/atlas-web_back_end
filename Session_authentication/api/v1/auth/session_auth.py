@@ -6,7 +6,6 @@ from api.v1.auth.auth import Auth
 import uuid
 from typing import TypeVar
 from os import getenv
-from models.user import User
 
 
 class SessionAuth(Auth):
@@ -52,7 +51,7 @@ class SessionAuth(Auth):
 
         return self.user_id_by_session_id.get(session_id)
 
-    def current_user(self, request=None) -> TypeVar('User'): # type: ignore
+    def current_user(self, request=None) -> TypeVar('User'):
         """
         Retrieves the current user from the request.
 
