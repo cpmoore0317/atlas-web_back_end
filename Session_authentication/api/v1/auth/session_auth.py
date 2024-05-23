@@ -5,6 +5,7 @@ Session Auth Module
 from api.v1.auth.auth import Auth
 import uuid
 from typing import TypeVar
+from os import getenv
 
 
 class SessionAuth(Auth):
@@ -70,5 +71,10 @@ class SessionAuth(Auth):
             request (flask.request): The request object to retreive the cookie form.
 
         Returns:
-            
+            str: The cookie value if found, otherwise None.
         """
+        if request is None:
+            return None
+
+        cookie_name = getenv("SESSION_NAME")
+        return request.cookies.get(cookie_name)
