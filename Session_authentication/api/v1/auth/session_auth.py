@@ -1,4 +1,4 @@
-# api/v1/auth/session_auth.py
+#!/usr/bin/env python3
 """
 Session Auth Module
 """
