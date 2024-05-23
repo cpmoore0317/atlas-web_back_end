@@ -4,6 +4,7 @@ Session Auth Module
 """
 from api.v1.auth.auth import Auth
 import uuid
+from typing import TypeVar
 
 
 class SessionAuth(Auth):
@@ -48,3 +49,26 @@ class SessionAuth(Auth):
             return None
 
         return self.user_id_by_session_id.get(session_id)
+
+    def current_user(self, request=None) -> TypeVar('User'):
+        """
+        Retrieves the current user from the request.
+
+        Args:
+            request (flask.Request): The flask request object.
+
+        Returns:
+            TypeVar('User'): None for now.
+        """
+        return None
+    
+    def session_cookie(self, request=None):
+        """
+        Returns a cookie value from a request.
+
+        Args:
+            request (flask.request): The request object to retreive the cookie form.
+
+        Returns:
+            
+        """
