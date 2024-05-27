@@ -6,10 +6,9 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm.session import Session
-from user import Base, User
 from sqlalchemy.exc import InvalidRequestError
 from sqlalchemy.orm.exc import NoResultFound
-from typing import TypeVar
+from user import Base, User
 
 
 class DB:
@@ -38,22 +37,23 @@ class DB:
         return user
 
     def find_user_by(self, **kwargs) -> User:
-        """Finds user by keyward """
+        """Finds user by keyword arguments"""
         query = self._session.query(User)
         for key, value in kwargs.items():
+            if not hasattr(User, key):
+                raise InvalidRequestError(f"Invalid column: '{key}'")
             query = query.filter(getattr(User, key) == value)
-        return query.first()
+        user = query.first()
+        if user is None:
+            raise NoResultFound("No user found")
+        return user
 
     def update_user(self, user_id: int, **kwargs) -> None:
-        """Updates user atribute"""
+        """Updates user attributes"""
         user = self.find_user_by(id=user_id)
-        if user is None:
-            raise ValueError("User not found")
-
         for key, value in kwargs.items():
             if hasattr(user, key):
                 setattr(user, key, value)
             else:
-                raise ValueError("Invalid attribute: '{}'".format(key))
-
+                raise ValueError(f"Invalid attribute: '{key}'")
         self._session.commit()
