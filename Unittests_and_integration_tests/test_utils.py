@@ -5,7 +5,6 @@ Unit tests for utils functions.
 import unittest
 from unittest.mock import patch, Mock
 from parameterized import parameterized
-from client import GithubOrgClient
 from utils import access_nested_map, get_json, memoize
 
 
@@ -79,22 +78,6 @@ class TestMemoize(unittest.TestCase):
 
             # Check that a_method was only called once
             mock_method.assert_called_once()
-
-
-class TestGithubOrgClient(unittest.TestCase):
-    """Tests for the GithubOrgClient class."""
-    
-    @parameterized.expand([
-        ("google", {"login": "google"}),
-        ("abc", {"login": "abc"}),
-    ])
-    @patch('client.get_json', return_value={"login": "test"})
-    def test_org(self, org_name, expected, mock_get_json):
-        """Test that GithubOrgClient.org returns the correct value."""
-        client = GithubOrgClient(org_name)
-        result = client.org
-        mock_get_json.assert_called_once_with(f"https://api.github.com/orgs/{org_name}")
-        self.assertEqual(result, expected)
 
 
 if __name__ == '__main__':
