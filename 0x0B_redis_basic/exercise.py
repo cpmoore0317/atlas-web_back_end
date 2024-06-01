@@ -134,4 +134,13 @@ class Cache:
         return self.get(key, fn=lambda x: x.decode('utf-8'))
 
     def get_int(self, key: str) -> Optional[int]:
-    
+        """
+        Retrieve the data stored at the given key in Redis and convert it to an integer.
+
+        Args:
+            key (str): The key to retrieve data from Redis.
+
+        Returns:
+            Optional[int]: The retrieved data as an integer, or None if the key does not exist.
+        """
+        return self.get(key, fn=int)
