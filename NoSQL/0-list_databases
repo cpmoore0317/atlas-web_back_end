@@ -1,5 +1,2 @@
 // Connect to the MongoDB server and list all databases
-
-mongo --quiet <<EOF
 show dbs
-EOF
