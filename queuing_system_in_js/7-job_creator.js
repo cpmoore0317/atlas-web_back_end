@@ -1,6 +1,5 @@
 import kue from 'kue';
 
-// Create a queue
 const queue = kue.createQueue();
 
 // Define an array of job data
