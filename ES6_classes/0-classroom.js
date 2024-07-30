@@ -1,4 +1,4 @@
-// cpmoore0317
+// 0-classroom.js
 
 export default class ClassRoom {
   constructor(maxStudentsSize) {
