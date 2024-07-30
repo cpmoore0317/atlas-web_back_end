@@ -45,3 +45,7 @@ The development of the Atlas Web Back-End began with a focus on creating a solid
 * Advanced database operations with MySQL and NoSQL
 * Comprehensive unit and integration testing
 * Caching and queuing systems
+
+### Challenges Encountered
+
+One of the most challenging aspects of this project was integrating various technologies and ensuring they work seamlessly together. Debugging asynchronous operations and optimizing database queries also posed significant challenges. However, these challenges provided valuable learning experiences and contributed to the overall robustness of the project.
