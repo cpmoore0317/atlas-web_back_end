@@ -1,4 +1,4 @@
-// cpmoore0317
+// 3-currency.js
 
 export default class Currency {
   constructor(code, name) {
