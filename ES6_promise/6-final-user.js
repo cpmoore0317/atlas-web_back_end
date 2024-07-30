@@ -1,4 +1,4 @@
-// cpmoore0317
+// 6-final-user.js
 
 import signUpUser from './4-user-promise';
 import uploadPhoto from './5-photo-reject';
