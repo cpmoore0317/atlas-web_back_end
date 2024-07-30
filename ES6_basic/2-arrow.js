@@ -1,4 +1,4 @@
-// cpmoore0317
+// 2-arrow.js
 
 export default function getNeighborhoodsList() {
   this.sanFranciscoNeighborhoods = ['SOMA', 'Union Square'];
