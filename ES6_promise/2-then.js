@@ -1,4 +1,4 @@
-// cpmoore0317
+// 2-then.js
 /* eslint-disable no-unused-vars */
 
 export default function handleResponseFromAPI(promise) {
