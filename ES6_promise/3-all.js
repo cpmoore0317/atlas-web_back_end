@@ -1,4 +1,4 @@
-// cpmoore0317
+// 3-all.js
 
 import { uploadPhoto, createUser } from './utils';
 
