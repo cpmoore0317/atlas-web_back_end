@@ -1,4 +1,4 @@
-// cpmoore0317
+// 9-groceries_list.js
 
 export default function groceriesList() {
   const groceries = new Map([
