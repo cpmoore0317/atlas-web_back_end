@@ -1,4 +1,4 @@
-// cpmoore0317
+// 2-get_students_by_loc.js
 
 export default function getStudentsByLocation(students, city) {
   const locationBasedList = students.filter(
