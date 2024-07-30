@@ -1,4 +1,4 @@
-// cpmoore0317
+// 6-set.js
 
 export default function setFromArray(array) {
   const set = new Set(array);
