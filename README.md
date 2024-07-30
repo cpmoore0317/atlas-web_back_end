@@ -4,11 +4,11 @@
 
 ## About the Developer
 
-Hi, I'm Parker Moore, the developer behind this project. I'm passionate about web development and enjoy working on both the back-end and front-end aspects of applications. You can connect with me on [LinkedIn](https://www.linkedin.com/in/parker-moore), follow me on [Twitter](https://twitter.com/parker_moore), or check out my [Portfolio Project repository](https://github.com/parker-moore/portfolio).
+Hi, I'm Parker Moore, the developer behind this project. I'm passionate about web development and enjoy working on applications' back-end and front-end aspects. You can connect with me on [LinkedIn](https://www.linkedin.com/in/parkermoore317/), or check out my [Portfolio Project repository](https://github.com/cpmoore0317/cpmoore0317.github.io).
 
 ## Project Description
 
-Atlas Web Back-End is a comprehensive back-end service for a web application. It features various modules and functionalities, ranging from authentication and data manipulation to caching and queuing systems. The project aims to provide a robust and scalable back-end solution, leveraging modern web technologies and best practices.
+Atlas Web Back-End is a repository that somewhat mimicks a comprehensive back-end service for a web application. It features various modules and functionalities, from authentication and data manipulation to caching and queuing systems. The project aims to provide a robust and scalable back-end solution, leveraging modern web technologies and best practices.
 
 ## Features
 
@@ -35,7 +35,7 @@ Atlas Web Back-End is a comprehensive back-end service for a web application. It
 
 ## Project Story
 
-The development of the Atlas Web Back-End began with a focus on creating a solid foundation for web applications. Starting with basic authentication and data manipulation techniques, the project evolved to include advanced features such as session management, caching, and queuing systems. Throughout the development process, I encountered various challenges, including integrating different technologies, ensuring code quality through extensive testing, and optimizing performance.
+The development of the Atlas Web Back-End began with a focus on creating solid foundational aspects for web applications. Starting with basic authentication and data manipulation techniques, the project evolved to include advanced features such as session management, caching, and queuing systems. Throughout the development process, I encountered various challenges, including integrating different technologies, ensuring code quality through extensive testing, and optimizing performance.
 
 ### Implemented Features
 
