@@ -1,4 +1,4 @@
-// cpmoore0317
+// 10-car.js
 
 export default class Car {
   constructor(brand, motor, color) {
