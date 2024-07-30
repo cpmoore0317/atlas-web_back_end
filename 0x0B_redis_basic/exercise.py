@@ -146,7 +146,7 @@ class Cache:
 
     def get_str(self, key: str) -> Optional[str]:
         """
-        Retrieve the data stored at the given key in Redis and convert it to a string.
+        Retrieves the data stored at the given key in Redis and convert it to a string.
 
         Args:
             key (str): The key to retrieve data from Redis.
