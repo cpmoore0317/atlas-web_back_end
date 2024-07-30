@@ -1,6 +1,6 @@
 # Atlas Web Back-End
 
-![Project Screenshot](link-to-screenshot.png)
+![Project Screenshot](back_end.png)
 
 ## About the Developer
 
