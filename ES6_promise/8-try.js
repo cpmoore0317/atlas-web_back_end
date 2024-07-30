@@ -1,4 +1,4 @@
-// cpmoore0317
+// 8-try.js
 
 export default function divideFunction(numerator, denominator) {
   if (denominator === 0) {
