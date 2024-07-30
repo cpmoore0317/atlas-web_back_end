@@ -1,4 +1,4 @@
-// cpmoore0317
+// 8-clean_set.js
 
 export default function cleanSet(set, startString) {
   const filteredValues = [...set].filter((value) => value.startsWith(startString));
