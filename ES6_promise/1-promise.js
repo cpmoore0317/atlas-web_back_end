@@ -1,4 +1,4 @@
-// cpmoore0317
+// 1-promise.js
 
 export default function getFullResponseFromAPI(success) {
   return new Promise((resolve, reject) => {
