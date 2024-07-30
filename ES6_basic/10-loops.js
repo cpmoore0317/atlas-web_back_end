@@ -1,4 +1,4 @@
-// cpmoore0317
+// 10-loops.js
 
 export default function appendToEachArrayValue(array, appendString) {
   const newArray = [];
