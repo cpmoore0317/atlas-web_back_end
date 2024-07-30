@@ -1,4 +1,4 @@
-// cpmoore0317
+// 8-getBudgetCurrentYear.js
 
 function getCurrentYear() {
   const date = new Date();
