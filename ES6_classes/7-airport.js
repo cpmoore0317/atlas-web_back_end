@@ -1,4 +1,4 @@
-// cpmoore0317
+// 7-airport.js
 
 export default class Airport {
   constructor(name, code) {
