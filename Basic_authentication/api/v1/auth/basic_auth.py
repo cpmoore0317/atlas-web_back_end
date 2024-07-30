@@ -42,7 +42,7 @@ class BasicAuth(Auth):
             base64_authorization_header (str): The Base64 string.
 
         Returns:
-            str: The decoded value as UTF8 string or None if input is invalid.
+            str: The decoded value as a UTF8 string or None if the input is invalid.
         """
         if base64_authorization_header is None or not isinstance(base64_authorization_header, str):
             return None
