@@ -1,4 +1,4 @@
-// cpmoore0317
+// 1-make_classrooms.js
 
 import ClassRoom from './0-classroom';
 
