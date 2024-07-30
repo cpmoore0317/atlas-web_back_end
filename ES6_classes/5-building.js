@@ -1,4 +1,4 @@
-// cpmoore0317
+// 5-building.js
 
 export default class Building {
   constructor(sqft) {
