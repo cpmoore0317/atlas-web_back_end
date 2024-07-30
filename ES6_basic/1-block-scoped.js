@@ -1,4 +1,4 @@
-// cpmoore0317
+// 1-block-scoped.js
 /* eslint-disable no-unused-vars */
 
 export default function taskBlock(trueOrFalse) {
