@@ -1,4 +1,4 @@
-// cpmoore0317
+// 4-pricing.js
 /* eslint-disable no-unused-vars */
 
 import Currency from './3-currency';
