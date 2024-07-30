@@ -1,4 +1,4 @@
-// cpmoore0317
+// 0-get_list_students.js
 
 export default function getListStudents() {
   const students = [];
